@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Nayana Tony</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Nayana Tony</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img id="profile-pic" src="./assets/Nayana Tony.jpg" alt="Nayana Tony profile picture">
+        </div>
+        <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Nayana Tony</h1>
+                <div class="btn-container">
+                    <button
+                      class="btn btn-color-2"
+                      onclick="window.open('./assets/NAYANA TONY (2).pdf')"
+                    >
+                      Download CV
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='#contact'">
+                        Contact Info
+                      </button>
+                      </div>
+                      <div id="socials-container">
+                        <img
+                          src="./assets/linkedin.png"
+                          alt="My LinkedIn profile"
+                          class="icon"
+                          onclick="location.href='https:www.linkedin.com/in/nayana-tony-b80a20279/'"
+                        />
+                        <img
+                          src="./assets/github.png"
+                          alt="My Github profile"
+                          class="icon"
+                          onclick="location.href='https://github.com/nayanatony01'" 
+                          />
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <p>
+            Welcome to my corner of the web! I’m Nayana, a passionate young engineering student dedicated to solving real-world problems through innovative technology. With a strong foundation in critical thinking and a commitment to excellence, I thrive on tackling challenges that push the boundaries of what's possible. My journey is fueled by a desire to make a positive impact, whether through collaborative projects or individual endeavors. Join me as I explore the exciting intersection of engineering and creativity!
+        </p>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-icons">
+            <div class="icon">
+                <img src="./assets/html.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="icon">
+                <img src="./assets/css-3 (1).png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="icon">
+                <img src="./assets/java.png" alt="React">
+                <p>Java</p>
+            </div>
+            <div class="icon">
+                <img src="./assets/python.png" alt="Node">
+                <p>Python</p>
+            </div>
+            <div class="icon">
+                <img src="./assets/figma.png" alt="GraphQL">
+                <p>Figma</p>
+            </div>
+        </div>
+        <section id="projects">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="./assets/Screenshot (19).png" alt="Project Image" class="project-image">
+                    <h3>Meet My Helper</h3>
+                    <p>MeetMyHelper is a platform for easily finding, booking, and managing caregiving services..</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Firebase</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">See Work</a>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-container">
+              <div class="contact-info">
+                <div class="email-item">
+                  <a href="mailto:nayanatony91@gmail.com">
+                    <img src="./assets/email.png" alt="Email Icon"> nayanatony91@gmail.com
+                  </a>
+                </div>
+                <div class="linkedin-item">
+                  <a href="https://www.linkedin.com/in/nayana-tony-b80a20279/" target="_blank">
+                    <img src="./assets/linkedin.png" alt="LinkedIn Icon"> linkedin.com/in/nayana-tony-b80a20279/
+                  </a>
+                </div>
+                <div class="github-item">
+                  <a href="https://github.com/nayanatony01" target="_blank">
+                    <img src="./assets/github.png" alt="GitHub Icon"> github.com/nayanatony01
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <footer>
+            <p>Copyright &#169; 2024  Nayana Tony. All Rights Reserved.</p>
+          </footer>              
+    <script src="script.js"></script>
+</body>
+</html>

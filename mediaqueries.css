@@ -1,0 +1,124 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+    #contact,
+    #projects {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+    #experience {
+        padding: 2rem 1rem; /* Add padding */
+        margin-top: 2rem; /* Increase margin */
+    }
+    .experience-icons {
+        flex-direction: column; /* Stack icons vertically */
+        align-items: center; /* Center icons */
+        margin-top: 1rem; /* Add space above icons */
+    }
+    .icon {
+        margin-bottom: 1rem; /* Space between icons */
+        width: 100px; /* Reduce size for smaller screens */
+        height: 100px; /* Ensure height matches */
+    }
+    #profile,
+    .section-container {
+        display: block;
+    }
+    section,
+    .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .about-containers {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contact {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items */
+        height: auto; /* Allow height to adjust */
+        padding: 1rem; /* Reduce padding */
+    }
+    .contact-info {
+        width: 90%; /* Limit width */
+        text-align: center; /* Center text */
+        gap: 1rem; /* Add gap between items */
+    }
+    .contact-info div {
+        width: auto; /* Allow width to adjust */
+        margin: 0; /* Reset margin */
+    }
+    .contact-info img {
+        width: 20px; /* Smaller icon size */
+        height: 20px; /* Maintain aspect ratio */
+    }
+    .contact-info a {
+        font-size: 1rem; /* Adjust font size */
+        text-align: center; /* Center text */
+    }
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    article {
+        font-size: 1rem;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+        flex-wrap: wrap;
+    }
+    .contact-info-container {
+        margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+        font-size: 1rem;
+    }
+    .experience-sub-title {
+        font-size: 1.25rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .section__pic-container {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .text-container {
+        text-align: justify;
+    }
+}
